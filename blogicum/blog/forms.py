@@ -102,11 +102,6 @@ class PostCreateForm(forms.ModelForm):
             )
 
 
-# class PostDeleteForm(forms.ModelForm):
-#     class Meta:
-#         model = Post
-
-
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment

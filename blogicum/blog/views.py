@@ -195,15 +195,6 @@ def edit_comment(request, post_id, comment_id):
     )
 
 
-# @login_required
-# def delete_comment(request, post_id, comment_id):
-#     comment = get_object_or_404(Comment, pk=comment_id)
-#     if request.user != comment.author:
-#         return HttpResponseForbidden()
-#     comment.delete()
-#     return redirect('blog:post_detail', id=post_id)
-
-
 @login_required
 def delete_comment(request, post_id, comment_id):
     comment = get_object_or_404(Comment, pk=comment_id)
